@@ -22,6 +22,7 @@ public class Users {
     private LocalDateTime blockDate;
     private List<Address> addresses;
     private List<Experience> experiences;
+    private List<Skills> skills;
 
     public long getId() {
         return id;
@@ -87,5 +88,27 @@ public class Users {
         this.blockDate = blockDate;
     }
 
+    public List<Address> getAddresses() {
+        return addresses;
+    }
 
+    public void setAddresses(List<Address> addresses) {
+        this.addresses = addresses;
+    }
+
+    public List<Experience> getExperiences() {
+        return experiences;
+    }
+
+    public void setExperiences(List<Experience> experiences) {
+        this.experiences = experiences;
+    }
+
+    public List<Skills> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(List<Skills> skills) {
+        this.skills = skills;
+    }
 }

@@ -13,6 +13,7 @@ public class SkillsCat {
     private long id;
     private String name;
     private boolean canBeConfirmed;
+    private Tests test;
 
     public long getId() {
         return id;
@@ -36,5 +37,13 @@ public class SkillsCat {
 
     public void setCanBeConfirmed(boolean canBeConfirmed) {
         this.canBeConfirmed = canBeConfirmed;
+    }
+
+    public Tests getTest() {
+        return test;
+    }
+
+    public void setTest(Tests test) {
+        this.test = test;
     }
 }

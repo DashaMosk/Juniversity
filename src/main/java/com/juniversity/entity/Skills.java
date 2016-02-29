@@ -17,7 +17,6 @@ public class Skills {
     private boolean isConfirmed;
     private LocalDate dateConf;
     private double score;
-    private Tests test;
 
     public long getId() {
         return id;
@@ -67,11 +66,4 @@ public class Skills {
         this.score = score;
     }
 
-    public Tests getTest() {
-        return test;
-    }
-
-    public void setTest(Tests test) {
-        this.test = test;
-    }
 }
