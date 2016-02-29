@@ -1,11 +1,16 @@
 package com.juniversity.entity;
 
+import javax.persistence.*;
 import java.time.LocalDate;
 
 /**
  * Created by Daria_Moskalenko on 2/29/2016.
  */
+@Entity
+@Table(name = "SKILLS")
 public class Skills {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private Users user;
     private SkillsCat skill;

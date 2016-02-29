@@ -1,9 +1,15 @@
 package com.juniversity.entity;
 
+import javax.persistence.*;
+
 /**
  * Created by Daria_Moskalenko on 2/29/2016.
  */
+@Entity
+@Table(name = "SKILLSCAT")
 public class SkillsCat {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private boolean canBeConfirmed;

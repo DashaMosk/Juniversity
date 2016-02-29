@@ -1,11 +1,16 @@
 package com.juniversity.entity;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
  * Created by Daria_Moskalenko on 2/26/2016.
  */
+@Entity
+@Table(name = "ADRESSES")
 public class Address {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private AddressType type;
     private String value;

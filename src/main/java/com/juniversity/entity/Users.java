@@ -1,12 +1,17 @@
 package com.juniversity.entity;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
 /**
  * Created by Daria_Moskalenko on 2/24/2016.
  */
+@Entity
+@Table(name = "USERS")
 public class Users {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
     private String baseEmail;
