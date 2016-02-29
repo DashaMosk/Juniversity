@@ -1,6 +1,7 @@
 package com.juniversity.entity;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
  * Created by Daria_Moskalenko on 2/24/2016.
@@ -14,6 +15,8 @@ public class Users {
     private LocalDateTime registryDate;
     private LocalDateTime lastVisitDate;
     private LocalDateTime blockDate;
+    private List<Address> addresses;
+    private List<Experience> experiences;
 
     public long getId() {
         return id;
@@ -78,4 +81,6 @@ public class Users {
     public void setBlockDate(LocalDateTime blockDate) {
         this.blockDate = blockDate;
     }
+
+
 }
